@@ -1,17 +1,41 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
+  "name": "3-Hz-proxy",
+  "description": "> Project description",
   "author": "",
-  "license": "",
+  "license": "ISC",
   "engines": {
     "node": ">=6.13.0"
   },
   "scripts": {
+    "start": "node server/server.js",
+    "webpack-dev": "webpack --config dev.config.js",
+    "webpack-prod": "webpack --config prod.config.js"
   },
   "dependencies": {
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
-  }
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.18.0",
+    "webpack-cli": "^4.4.0"
+  },
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lokisscepter/3-Hz-proxy.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/lokisscepter/3-Hz-proxy/issues"
+  },
+  "homepage": "https://github.com/lokisscepter/3-Hz-proxy#readme"
 }
