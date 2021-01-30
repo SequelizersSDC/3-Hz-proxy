@@ -8,11 +8,14 @@
   },
   "scripts": {
     "start": "node server/server.js",
+    "start-prod": "pm2 server/server.js -i max",
+    "stop-prod": "pm2 stop server/server.js",
     "webpack-dev": "webpack --config dev.config.js",
     "webpack-prod": "webpack --config prod.config.js"
   },
   "dependencies": {
     "express": "^4.17.1",
+    "pm2": "^4.5.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
@@ -23,6 +26,7 @@
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.1",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
+    "file-loader": "^6.2.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.18.0",
     "webpack-cli": "^4.4.0"
