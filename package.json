@@ -10,6 +10,7 @@
     "start": "node server/server.js",
     "start-prod": "pm2 server/server.js -i max",
     "stop-prod": "pm2 stop server/server.js",
+    "restart-prod": "pm2 reload server/server.js",
     "webpack-dev": "webpack --config dev.config.js",
     "webpack-prod": "webpack --config prod.config.js"
   },
